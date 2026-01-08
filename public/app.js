@@ -34,10 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const filtered = allTalks.filter(item => {
             // Filter by category
-            if (item.category && Array.isArray(item.category)) {
-                return item.category.some(cat => cat.toLowerCase().includes(query));
-            }
-            return false;
+            const matchCategory = item.category && Array.isArray(item.category) && 
+                item.category.some(cat => cat.toLowerCase().includes(query));
+            
+            // Filter by speakers
+            const matchSpeaker = item.speakers && Array.isArray(item.speakers) && 
+                item.speakers.some(speaker => speaker.toLowerCase().includes(query));
+
+            return matchCategory || matchSpeaker;
         });
 
         renderSchedule(filtered);
@@ -47,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scheduleContainer.innerHTML = '';
 
         if (items.length === 0) {
-            scheduleContainer.innerHTML = '<div class="no-results">No talks found matching your category.</div>';
+            scheduleContainer.innerHTML = '<div class="no-results">No talks found matching your query.</div>';
             return;
         }
 
