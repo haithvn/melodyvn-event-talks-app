@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "title": "Scaling Node.js Architecture for Enterprise",
+    "speakers": ["Sarah Jenkins", "David Chen"],
+    "category": ["Backend", "Architecture"],
+    "duration": "60 min",
+    "description": "Learn how to structure your Node.js applications to handle millions of requests. We will cover microservices, caching strategies, and load balancing.",
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "type": "talk"
+  },
+  {
+    "id": 2,
+    "title": "Modern CSS Layouts: Mastering Grid & Subgrid",
+    "speakers": ["Emily Rodriguez"],
+    "category": ["Frontend", "CSS"],
+    "duration": "60 min",
+    "description": "Stop fighting with floats and positioning. Discover the power of CSS Grid and the new Subgrid feature to build complex, responsive layouts with ease.",
+    "startTime": "11:10",
+    "endTime": "12:10",
+    "type": "talk"
+  },
+  {
+    "id": "lunch",
+    "title": "Lunch Break",
+    "speakers": [],
+    "category": ["Networking"],
+    "duration": "60 min",
+    "description": "Enjoy a catered lunch and network with other attendees.",
+    "startTime": "12:10",
+    "endTime": "13:10",
+    "type": "break"
+  },
+  {
+    "id": 3,
+    "title": "Securing Your Web Applications in 2026",
+    "speakers": ["Michael Chang"],
+    "category": ["Security", "Web"],
+    "duration": "60 min",
+    "description": "A deep dive into common vulnerabilities (OWASP Top 10) and modern mitigation techniques. Ensure your user data remains safe.",
+    "startTime": "13:10",
+    "endTime": "14:10",
+    "type": "talk"
+  },
+  {
+    "id": 4,
+    "title": "The State of WebAssembly",
+    "speakers": ["Jessica Alba", "Tom Hardy"],
+    "category": ["Performance", "Wasm"],
+    "duration": "60 min",
+    "description": "WebAssembly is changing how we run high-performance code in the browser. See practical examples of image processing and game development.",
+    "startTime": "14:20",
+    "endTime": "15:20",
+    "type": "talk"
+  },
+  {
+    "id": 5,
+    "title": "Optimizing Database Queries",
+    "speakers": ["Robert Fox"],
+    "category": ["Database", "Backend"],
+    "duration": "60 min",
+    "description": "Slow queries kill performance. We'll explore indexing, query planning, and common pitfalls in SQL and NoSQL databases.",
+    "startTime": "15:30",
+    "endTime": "16:30",
+    "type": "talk"
+  },
+  {
+    "id": 6,
+    "title": "Building Accessible UIs for Everyone",
+    "speakers": ["Linda Kim"],
+    "category": ["Accessibility", "Frontend"],
+    "duration": "60 min",
+    "description": "Accessibility is not a feature, it's a requirement. Learn semantic HTML, ARIA roles, and how to test your site for screen readers.",
+    "startTime": "16:40",
+    "endTime": "17:40",
+    "type": "talk"
+  }
+]

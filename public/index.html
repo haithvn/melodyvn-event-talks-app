@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSummit 2026 Schedule</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="logo">TechSummit <span class="year">2026</span></h1>
+            <p class="tagline">Innovating for Tomorrow</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="controls">
+            <div class="search-wrapper">
+                <input type="text" id="categorySearch" placeholder="Filter talks by category (e.g., 'Frontend', 'Security')..." aria-label="Filter talks by category">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 2c4.97 0 9 4.03 9 9 0 2.12-.74 4.07-1.97 5.61l4.55 4.55-1.42 1.42-4.55-4.55C15.07 19.26 13.12 20 11 20c-4.97 0-9-4.03-9-9s4.03-9 9-9zm0 2c-3.87 0-7 3.13-7 7s3.13 7 7 7 7-3.13 7-7-3.13-7-7-7z" fill="#003366"/></svg>
+            </div>
+        </section>
+
+        <section id="schedule" class="schedule-list">
+            <!-- Schedule items will be injected here by JavaScript -->
+            <div class="loading">Loading schedule...</div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 TechSummit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
