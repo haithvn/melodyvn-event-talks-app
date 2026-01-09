@@ -107,6 +107,44 @@ body {
     color: #333;
 }
 
+/* Filters */
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.filter-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
 /* Schedule List */
 .schedule-list {
     display: flex;
@@ -124,6 +162,41 @@ body {
     flex-direction: column;
     border-left: 5px solid transparent;
     transition: transform 0.2s ease;
+    position: relative; /* Context for absolute positioning of heart */
+}
+
+.fav-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 10;
+    color: #ccc;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.fav-btn:hover {
+    transform: scale(1.1);
+    color: #999;
+}
+
+.fav-btn.active {
+    color: #ff4757;
+    fill: #ff4757;
+}
+
+.fav-btn svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2;
+}
+
+.fav-btn.active svg {
+    fill: currentColor;
+    stroke: none;
 }
 
 .schedule-item:hover {
