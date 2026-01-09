@@ -21,10 +21,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     // Search/Filter Event Listener
+    const clearBtn = document.getElementById('clearSearch');
+
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
+        toggleClearButton(query);
         filterSchedule(query);
     });
+
+    // Clear Search Logic
+    clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        toggleClearButton('');
+        filterSchedule('');
+        searchInput.focus();
+    });
+
+    function toggleClearButton(query) {
+        if (query) {
+            clearBtn.style.display = 'flex';
+        } else {
+            clearBtn.style.display = 'none';
+        }
+    }
 
     function filterSchedule(query) {
         if (!query) {

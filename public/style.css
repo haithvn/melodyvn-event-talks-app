@@ -67,7 +67,7 @@ body {
 
 #categorySearch {
     width: 100%;
-    padding: 15px 50px 15px 20px;
+    padding: 15px 40px 15px 50px;
     font-size: 1rem;
     border: 2px solid var(--border-color);
     border-radius: 30px;
@@ -82,10 +82,29 @@ body {
 
 .search-icon {
     position: absolute;
-    right: 20px;
+    left: 20px;
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
+}
+
+.clear-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    color: #999;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear-btn:hover {
+    color: #333;
 }
 
 /* Schedule List */
